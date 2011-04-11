@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    
+    <TextView 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:text="@string/counter_title" />
+    
+    <EditText android:id="@+id/counterTitleEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true" />
+        
+    <Button android:id="@+id/applyButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:text="Apply"/>
+        
+    <Button android:id="@+id/cancelButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"/>
+</LinearLayout>
