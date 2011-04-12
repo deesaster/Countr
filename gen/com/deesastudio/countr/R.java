@@ -17,10 +17,10 @@ public final class R {
     public static final class drawable {
         public static final int header_add_button=0x7f020000;
         public static final int header_bg=0x7f020001;
-        public static final int header_bg_old=0x7f020002;
-        public static final int header_gradient=0x7f020003;
-        public static final int icon=0x7f020004;
-        public static final int wooden_bg=0x7f020005;
+        public static final int header_gradient=0x7f020002;
+        public static final int icon=0x7f020003;
+        public static final int listitem_counter_selected=0x7f020004;
+        public static final int listitem_counter_selector=0x7f020005;
     }
     public static final class id {
         public static final int applyButton=0x7f070005;
