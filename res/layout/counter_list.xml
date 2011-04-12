@@ -2,24 +2,20 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:background="@android:color/white">
     
-    <TextView android:id="@+id/textAppName"
-      android:layout_width="fill_parent"
-      android:layout_height="wrap_content"
-      android:text="@string/app_name" />
-      
-    <Button android:id="@+id/btnAddNewCounter"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Add" 
-      android:layout_alignParentTop="true"
-      android:layout_alignParentRight="true" />
+    <include android:id="@+id/headerView"
+        layout="@layout/header_layout" />
     
     <ListView android:id="@+id/listCounters"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btnAddNewCounter">
+        android:layout_below="@id/headerView"
+        android:scrollingCache="false"
+        android:divider="@color/listitem_counter_divider"
+        android:dividerHeight="1px"
+        android:fadingEdge="none">
     </ListView>
     
 </RelativeLayout>

@@ -4,18 +4,19 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class NewCounterActivity extends Activity {
+public class EditCounterActivity extends Activity {
     private EditText mCounterTitleEdit;
     
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         
-        setContentView(R.layout.new_counter);
+        setContentView(R.layout.edit_counter);
         
         initUiComponents();
     }

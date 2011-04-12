@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical">
-  
+    android:orientation="vertical"
+    android:background="@android:color/white">
+    
+    <include android:id="@+id/headerView"
+        layout="@layout/header_layout" />
+    
     <TextView android:id="@+id/counterTextView"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

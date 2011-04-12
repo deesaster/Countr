@@ -10,10 +10,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnCreateContextMenuListener;
+import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
@@ -29,6 +30,7 @@ public class CounterListActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        
         setContentView(R.layout.counter_list);
         
         mDbHelper = new CounterDbHelper(this);
@@ -74,13 +76,14 @@ public class CounterListActivity extends Activity {
             }
         });
         
-        Button btnNewCounter = (Button)findViewById(R.id.btnAddNewCounter);
+        ImageView btnNewCounter = (ImageView)findViewById(R.id.btnAddNewCounter);
+        btnNewCounter.setVisibility(View.VISIBLE);
         btnNewCounter.setOnClickListener(new OnClickListener() {
             
             @Override
             public void onClick(View v) {
                 Intent newCounterIntent = new Intent(CounterListActivity.this, 
-                        NewCounterActivity.class);
+                        EditCounterActivity.class);
                 startActivityForResult(newCounterIntent, NEW_COUNTER_REQUEST_CODE);
 //                mDbHelper.createCounter("Text");
 //                populateList();

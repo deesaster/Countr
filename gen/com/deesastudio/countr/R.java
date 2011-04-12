@@ -10,30 +10,44 @@ package com.deesastudio.countr;
 public final class R {
     public static final class attr {
     }
+    public static final class color {
+        public static final int listitem_counter_divider=0x7f040001;
+        public static final int listitem_counter_title=0x7f040000;
+    }
     public static final class drawable {
-        public static final int icon=0x7f020000;
+        public static final int header_add_button=0x7f020000;
+        public static final int header_bg=0x7f020001;
+        public static final int header_bg_old=0x7f020002;
+        public static final int header_gradient=0x7f020003;
+        public static final int icon=0x7f020004;
+        public static final int wooden_bg=0x7f020005;
     }
     public static final class id {
-        public static final int applyButton=0x7f050007;
-        public static final int btnAddNewCounter=0x7f050003;
-        public static final int cancelButton=0x7f050008;
-        public static final int counterTextView=0x7f050000;
-        public static final int counterTitleEditText=0x7f050006;
-        public static final int incrementButton=0x7f050001;
-        public static final int listCounters=0x7f050004;
-        public static final int textAppName=0x7f050002;
-        public static final int textCounterTitle=0x7f050005;
+        public static final int applyButton=0x7f070005;
+        public static final int btnAddNewCounter=0x7f070007;
+        public static final int cancelButton=0x7f070006;
+        public static final int counterTextView=0x7f070001;
+        public static final int counterTitleEditText=0x7f070004;
+        public static final int headerView=0x7f070000;
+        public static final int incrementButton=0x7f070002;
+        public static final int listCounters=0x7f070003;
+        public static final int textCounterTitle=0x7f070008;
+        public static final int textCounterValue=0x7f070009;
     }
     public static final class layout {
         public static final int counter_details=0x7f030000;
         public static final int counter_list=0x7f030001;
-        public static final int listitem_counter=0x7f030002;
-        public static final int new_counter=0x7f030003;
+        public static final int edit_counter=0x7f030002;
+        public static final int header_layout=0x7f030003;
+        public static final int listitem_counter=0x7f030004;
     }
     public static final class string {
-        public static final int app_name=0x7f040000;
-        public static final int counter_details_label=0x7f040002;
-        public static final int counter_title=0x7f040003;
-        public static final int new_counter_label=0x7f040001;
+        public static final int app_name=0x7f050000;
+        public static final int counter_details_label=0x7f050002;
+        public static final int counter_title=0x7f050003;
+        public static final int new_counter_label=0x7f050001;
+    }
+    public static final class style {
+        public static final int Theme_Vancouver=0x7f060000;
     }
 }
