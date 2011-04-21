@@ -4,4 +4,6 @@
     <string name="new_counter_label">Countr: New Counter</string>
     <string name="counter_details_label">Countr: Details</string>
     <string name="counter_title">Counter Title</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
 </resources>

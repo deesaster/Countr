@@ -8,24 +8,26 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.deesastudio.countr.models.Counter;
+
 public class EditCounterActivity extends Activity {
     private EditText mCounterTitleEdit;
-    
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        
+
         setContentView(R.layout.edit_counter);
-        
+
         initUiComponents();
     }
-    
+
     private void initUiComponents() {
-        mCounterTitleEdit = (EditText)findViewById(R.id.counterTitleEditText);
-        
-        Button applyBtn = (Button)findViewById(R.id.applyButton);
+        mCounterTitleEdit = (EditText) findViewById(R.id.counterTitleEditText);
+
+        Button applyBtn = (Button) findViewById(R.id.applyButton);
         applyBtn.setOnClickListener(new OnClickListener() {
-            
+
             @Override
             public void onClick(View v) {
                 if (mCounterTitleEdit.getText().length() > 0) {
@@ -33,21 +35,21 @@ public class EditCounterActivity extends Activity {
                 }
             }
         });
-        
-        Button cancelBtn = (Button)findViewById(R.id.cancelButton);
+
+        Button cancelBtn = (Button) findViewById(R.id.cancelButton);
         cancelBtn.setOnClickListener(new OnClickListener() {
-            
+
             @Override
             public void onClick(View v) {
                 finish();
             }
         });
     }
-    
+
     private void finishWithResult() {
         Intent dataIntent = new Intent();
-        dataIntent.putExtra(Counter.KEY_COUNTER_TITLE, 
-                mCounterTitleEdit.getText().toString());
+        dataIntent.putExtra(Counter.KEY_TITLE, mCounterTitleEdit.getText()
+                .toString());
         setResult(Activity.RESULT_OK, dataIntent);
         finish();
     }

@@ -5,12 +5,9 @@
   android:paddingLeft="10dp" android:paddingRight="10dp"
   android:background="@drawable/listitem_counter_selector">
 
-  <TextView android:id="@+id/textCounterTitle"
+  <TextView android:id="@+id/textTimestamp"
     android:layout_width="wrap_content" android:layout_height="wrap_content"
     android:layout_alignParentLeft="true" android:textColor="@color/listitem_counter_title"
     android:singleLine="true" android:ellipsize="end" />
 
-  <TextView android:id="@+id/textCounterValue"
-    android:layout_width="wrap_content" android:layout_height="wrap_content"
-    android:layout_alignParentRight="true" android:text="0" />
 </RelativeLayout>
