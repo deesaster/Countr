@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Countr</string>
     <string name="new_counter_label">Countr: New Counter</string>
     <string name="counter_details_label">Countr: Details</string>
     <string name="counter_title">Counter Title</string>

@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.deesastudio.countr"
-      android:versionCode="1"
-      android:versionName="1.0">
-    <uses-sdk android:minSdkVersion="7" />
+          package="com.leetr.countr"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="7"/>
 
-    <application android:icon="@drawable/icon" 
-        android:label="@string/app_name"
-        android:theme="@style/Theme.Vancouver">
-        
-        <activity android:name="CounterListActivity"
+    <application android:icon="@drawable/icon"
+                 android:label="@string/app_name"
+                 android:theme="@style/Theme.Vancouver"
+                 android:debuggable="true">
+
+        <activity android:name="com.leetr.countr.CounterListActivity"
                   android:label="@string/app_name">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        
-        <activity android:name="EditCounterActivity"
-                  android:label="@string/new_counter_label" />
-        
-        <activity android:name=".CounterDetailsActivity"
-                  android:label="@string/counter_details_label" />
+
+        <activity android:name="com.leetr.countr.EditCounterActivity"
+                  android:label="@string/new_counter_label"/>
+
+        <activity android:name="com.leetr.countr.CounterDetailsActivity"
+                  android:label="@string/counter_details_label"/>
+
+        <provider android:name=".provider.CounterProvider"
+                  android:authorities="com.leetr.countr.provider.CounterProvider"/>
     </application>
 </manifest>

@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_width="fill_parent" android:layout_height="fill_parent"
-  android:paddingTop="15dp" android:paddingBottom="15dp"
-  android:paddingLeft="10dp" android:paddingRight="10dp"
-  android:background="@drawable/listitem_counter_selector">
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/listitem_counter_selector">
 
-  <TextView android:id="@+id/textCounterTitle"
-    android:layout_width="wrap_content" android:layout_height="wrap_content"
-    android:layout_alignParentLeft="true" android:textColor="@color/listitem_counter_title"
-    android:singleLine="true" android:ellipsize="end" />
+    <TextView android:id="@+id/textCounterTitle"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:textColor="@color/listitem_counter_title"
+              android:singleLine="true"
+              android:ellipsize="end"/>
 
-  <TextView android:id="@+id/textCounterValue"
-    android:layout_width="wrap_content" android:layout_height="wrap_content"
-    android:layout_alignParentRight="true" android:text="0" />
+    <TextView android:id="@+id/textCounterValue"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:text="0"/>
 </RelativeLayout>

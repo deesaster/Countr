@@ -1,4 +1,4 @@
-package com.deesastudio.countr;
+package com.leetr.countr;
 
 import android.content.Context;
 import android.database.SQLException;

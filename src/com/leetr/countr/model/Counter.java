@@ -1,11 +1,11 @@
-package com.deesastudio.countr.models;
+package com.leetr.countr.model;
 
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.deesastudio.countr.DbHelper;
+import com.leetr.countr.DbHelper;
 
 public class Counter {
     public static final String TABLE_NAME = "counters";

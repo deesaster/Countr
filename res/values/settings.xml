@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Countr</string>
+
+    <!-- Db Settings -->
+    <string name="settings_db_name">CounterDb</string>
+    <string-array name="settings_db_create_queries">
+        <item>create table counter(_id integer primary key autoincrement, name text not null, description text, count_cache integer not null default(0), sort_order integer not null default(0))</item>
+        <item>create table counter_item(_id integer primary key autoincrement, counter_id integer not null, value real not null default(1.0),tstamp default current_timestamp, latitude TEXT, longitude TEXT)</item>
+    </string-array>
+</resources>

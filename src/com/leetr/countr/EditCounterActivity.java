@@ -1,4 +1,4 @@
-package com.deesastudio.countr;
+package com.leetr.countr;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,6 +8,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.deesastudio.countr.R;
 import com.deesastudio.countr.models.Counter;
 
 public class EditCounterActivity extends Activity {
