@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.deesastudio.countr.R;
-import com.deesastudio.countr.models.Counter;
+import com.leetr.countr.model.Counter;
 
 public class EditCounterActivity extends Activity {
     private EditText mCounterTitleEdit;

@@ -6,8 +6,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-import com.deesastudio.countr.models.Counter;
-import com.deesastudio.countr.models.CounterItem;
+import com.leetr.countr.model.Counter;
+import com.leetr.countr.model.CounterItem;
 
 public class DbHelper {
 

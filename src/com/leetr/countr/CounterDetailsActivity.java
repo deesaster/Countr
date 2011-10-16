@@ -4,18 +4,12 @@ import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
-import android.view.ContextMenu;
-import android.view.ContextMenu.ContextMenuInfo;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.view.View.OnCreateContextMenuListener;
-import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.ViewFlipper;
 import com.deesastudio.countr.R;
-import com.deesastudio.countr.models.Counter;
-import com.deesastudio.countr.models.CounterItem;
+import com.leetr.countr.model.Counter;
+import com.leetr.countr.model.CounterItem;
 
 public class CounterDetailsActivity extends Activity {
 
@@ -52,30 +46,30 @@ public class CounterDetailsActivity extends Activity {
     }
 
     private void initUiComponents() {
-        Button incrementBtn = (Button) findViewById(R.id.incrementButton);
-        incrementBtn.setOnClickListener(new OnClickListener() {
+//        Button incrementBtn = (Button) findViewById(R.id.incrementButton);
+//        incrementBtn.setOnClickListener(new OnClickListener() {
+//
+//            @Override
+//            public void onClick(View v) {
+//                increment(1);
+//            }
+//        });
 
-            @Override
-            public void onClick(View v) {
-                increment(1);
-            }
-        });
+//        mItemsListView = (ListView) findViewById(R.id.listItems);
+//        mItemsListView
+//                .setOnCreateContextMenuListener(new OnCreateContextMenuListener() {
+//
+//                    @Override
+//                    public void onCreateContextMenu(ContextMenu menu, View v,
+//                                                    ContextMenuInfo menuInfo) {
+////                        AdapterContextMenuInfo info = (AdapterContextMenuInfo) menuInfo;
+////                        CounterItem cItem = CounterItem.getById(mDbHelper, info.id);
+//
+//                        menu.add(0, CONTEXTMENU_DELETE, 0, R.string.delete);
+//                    }
+//                });
 
-        mItemsListView = (ListView) findViewById(R.id.listItems);
-        mItemsListView
-                .setOnCreateContextMenuListener(new OnCreateContextMenuListener() {
-
-                    @Override
-                    public void onCreateContextMenu(ContextMenu menu, View v,
-                                                    ContextMenuInfo menuInfo) {
-//                        AdapterContextMenuInfo info = (AdapterContextMenuInfo) menuInfo;
-//                        CounterItem cItem = CounterItem.getById(mDbHelper, info.id);
-
-                        menu.add(0, CONTEXTMENU_DELETE, 0, R.string.delete);
-                    }
-                });
-
-        mContentFlipper = (ViewFlipper) findViewById(R.id.contentFlipper);
+//        mContentFlipper = (ViewFlipper) findViewById(R.id.contentFlipper);
 
 //        TabLayout tabLayout = (TabLayout) findViewById(R.id.contextTabLayout);
 //        tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
