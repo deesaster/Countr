@@ -7,7 +7,7 @@
 
     <application android:icon="@drawable/icon"
                  android:label="@string/app_name"
-                 android:theme="@style/Theme.Vancouver"
+                 android:theme="@style/Theme.Sherlock"
                  android:debuggable="true">
 
         <activity android:name="com.leetr.countr.CounterListActivity"
@@ -27,4 +27,7 @@
         <provider android:name=".provider.CounterProvider"
                   android:authorities="com.leetr.countr.provider.CounterProvider"/>
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 </manifest>

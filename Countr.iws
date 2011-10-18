@@ -5,27 +5,102 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e573d57e-87c2-4f70-9d12-a305f3f34c01" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Countr.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/leetr/countr/CounterDetailsActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/leetr/countr/CounterListActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/leetr/countr/model/CounterItem.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/com/deesastudio/countr/R.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-hdpi/tab_bar_bg.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/deesastudio/countr/CounterDetailsActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/deesastudio/countr/CounterListActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/deesastudio/countr/models/CounterItem.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/graphics/add_button.pxm" afterPath="$PROJECT_DIR$/project_assets/graphics/add_button.pxm" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/graphics/header_gradient.pxm" afterPath="$PROJECT_DIR$/project_assets/graphics/header_gradient.pxm" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/graphics/listitem_counter_selected.pxm" afterPath="$PROJECT_DIR$/project_assets/graphics/listitem_counter_selected.pxm" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/graphics/tab_bar_bg.pxm" afterPath="$PROJECT_DIR$/project_assets/graphics/tab_bar_bg.pxm" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/graphics/tab_bar_button_idle.pxm" afterPath="$PROJECT_DIR$/project_assets/graphics/tab_bar_button_idle.pxm" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/deesastudio/countr/DbHelper.java" afterPath="$PROJECT_DIR$/src/com/leetr/countr/DbHelper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/deesastudio/countr/EditCounterActivity.java" afterPath="$PROJECT_DIR$/src/com/leetr/countr/EditCounterActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/deesastudio/countr/models/Counter.java" afterPath="$PROJECT_DIR$/src/com/leetr/countr/model/Counter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/external/actionbarsherlock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/libs/jackson-core-asl-1.8.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/libs/jackson-mapper-asl-1.8.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/libs/libGoogleAnalytics.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/proguard.cfg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/project_assets/splash_image.pxm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/res/drawable-hdpi/header_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/res/drawable-hdpi/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/res/drawable-hdpi/leetr_grey_tab_bg.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/res/drawable-hdpi/leetr_grey_tab_pressed.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/res/drawable-hdpi/leetr_grey_tab_unpressed.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/res/drawable-hdpi/splash_image.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/res/drawable-ldpi/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/res/drawable-mdpi/header_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/res/drawable-mdpi/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/res/drawable-mdpi/splash_image.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/.gitmodules" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/android-leetr-library.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/build.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/default.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/res/drawable-mdpi/header_bar_bg.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/res/drawable-mdpi/leetr_grey_tab_selector.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/res/layout-xlarge/leetr_app_layout.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/res/layout/leetr_action_bar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/res/layout/leetr_app_layout.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/res/layout/leetr_list_layout.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/res/layout/leetr_navigation_tabs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/res/layout/leetr_splash.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/res/layout/leetr_web_fragment.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/res/layout/list_with_empty_text.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/res/values/attrs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/res/values/settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/res/values/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/res/values/styles.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/activity/LeetrActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/adapter/EndlessArrayAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/core/Device.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/core/Leetr.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/core/LeetrApplication.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/core/LoaderActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/core/Settings.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/core/WorkQueue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/core/db/LeetrDbHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/core/interfaces/ILeetrUtility.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/core/listener/OnCacheBitmapLoadListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/core/listener/OnFileSaveListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/core/listener/OnHttpBitmapListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/core/listener/OnHttpJacksonListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/core/listener/OnHttpStringListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/core/listener/OnLocationUpdateListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/core/utility/FileCacheUtility.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/core/utility/InMemoryCacheUtility.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/core/utility/LocationUpdaterUtility.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/core/utility/SimpleHttpUtility.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/fragment/LeetrFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/fragment/LeetrSplashFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/fragment/LeetrTabsFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/fragment/LeetrWebFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/location/FroyoLocationUpdateRequester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/location/GingerbreadLastLocationFinder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/location/GingerbreadLocationUpdateRequester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/location/LegacyLastLocationFinder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/location/LegacyLocationUpdateRequester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/location/LocationFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/location/base/ILastLocationFinder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/location/base/LocationUpdateRequester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/ui/TabImageButton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/ui/TabLayout.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/ui/TabTextButton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/ui/base/ITab.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/util/StringUtils.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/counter_list.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/header_layout.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/fragment/LeetrActionBarFragment.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Countr.iml" afterPath="$PROJECT_DIR$/Countr.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Countr.ipr" afterPath="$PROJECT_DIR$/Countr.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Countr.iws" afterPath="$PROJECT_DIR$/Countr.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/leetr/R.java" afterPath="$PROJECT_DIR$/gen/com/leetr/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/leetr/countr/R.java" afterPath="$PROJECT_DIR$/gen/com/leetr/countr/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/counter_details.xml" afterPath="$PROJECT_DIR$/res/layout/counter_details.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/listitem_counter.xml" afterPath="$PROJECT_DIR$/res/layout/listitem_counter.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/edit_counter.xml" afterPath="$PROJECT_DIR$/res/layout/edit_counter.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/leetr/countr/CounterDetailsActivity.java" afterPath="$PROJECT_DIR$/src/com/leetr/countr/CounterDetailsActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/leetr/countr/CounterListActivity.java" afterPath="$PROJECT_DIR$/src/com/leetr/countr/CounterListActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/leetr/countr/DbHelper.java" afterPath="$PROJECT_DIR$/src/com/leetr/countr/DbHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/leetr/countr/EditCounterActivity.java" afterPath="$PROJECT_DIR$/src/com/leetr/countr/EditCounterActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/leetr/countr/fragment/CounterListFragment.java" afterPath="$PROJECT_DIR$/src/com/leetr/countr/fragment/CounterListFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/leetr/countr/model/Counter.java" afterPath="$PROJECT_DIR$/src/com/leetr/countr/model/Counter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/leetr/countr/model/CounterItem.java" afterPath="$PROJECT_DIR$/src/com/leetr/countr/model/CounterItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/leetr/countr/provider/CounterProvider.java" afterPath="$PROJECT_DIR$/src/com/leetr/countr/provider/CounterProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../leetr-android/external/actionbarsherlock/library/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../leetr-android/external/actionbarsherlock/library/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../leetr-android/external/actionbarsherlock/library/default.properties" afterPath="$PROJECT_DIR$/../leetr-android/external/actionbarsherlock/library/default.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/activity/LeetrDashboardActivity.java" afterPath="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/activity/LeetrDashboardActivity.java" />
     </list>
     <ignored path="Countr.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,21 +124,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/leetr/countr/CounterListActivity.java" line="31" class="com.leetr.countr.CounterListActivity" package="com.leetr.countr">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -104,64 +164,75 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Counter.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/leetr/countr/model/Counter.java">
+      <file leaf-file-name="CounterListActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/leetr/countr/CounterListActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="8" selection-start="1465" selection-end="1465" vertical-scroll-proportion="0.8908507">
-              <folding />
+            <state line="29" column="50" selection-start="940" selection-end="940" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CounterProvider.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/leetr/countr/provider/CounterProvider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="135" column="35" selection-start="4653" selection-end="4653" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CounterItem.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/leetr/countr/model/CounterItem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CounterListFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/leetr/countr/fragment/CounterListFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/values/settings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="35" selection-start="635" selection-end="635" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="83" selection-start="1216" selection-end="1216" vertical-scroll-proportion="0.0">
+            <state line="6" column="33" selection-start="258" selection-end="258" vertical-scroll-proportion="0.17578125">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LeetrDbHelper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../leetr-android/src/com/leetr/core/db/LeetrDbHelper.java">
+      <file leaf-file-name="CounterDetailsActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/leetr/countr/CounterDetailsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="84" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0">
+            <state line="20" column="41" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="counter_details.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/counter_details.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="49" selection-start="737" selection-end="737" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit_counter.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/edit_counter.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="4" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listitem_counter.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/listitem_counter.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="40" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="abs__styles.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../leetr-android/external/actionbarsherlock/library/res/values/abs__styles.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="41" selection-start="1465" selection-end="1465" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LeetrDashboardActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/activity/LeetrDashboardActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="43" selection-start="650" selection-end="650" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -181,22 +252,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/deesastudio/countr/CounterListActivity.java" />
-        <option value="$PROJECT_DIR$/res/layout/listitem_counter.xml" />
-        <option value="$PROJECT_DIR$/res/layout/counter_details.xml" />
-        <option value="$PROJECT_DIR$/src/com/leetr/countr/CounterDetailsActivity.java" />
-        <option value="$PROJECT_DIR$/../leetr-android/src/com/leetr/fragment/LeetrActionBarFragment.java" />
-        <option value="$PROJECT_DIR$/../leetr-android/src/com/leetr/fragment/LeetrSplashFragment.java" />
-        <option value="$PROJECT_DIR$/../leetr-android/src/com/leetr/core/LoaderActivity.java" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/src/com/leetr/countr/CounterListActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/leetr/countr/model/Counter.java" />
         <option value="$PROJECT_DIR$/src/com/leetr/countr/provider/CounterProviderMetaData.java" />
         <option value="$PROJECT_DIR$/../leetr-android/src/com/leetr/core/db/LeetrDbHelper.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/res/values/settings.xml" />
-        <option value="$PROJECT_DIR$/src/com/leetr/countr/fragment/CounterListFragment.java" />
         <option value="$PROJECT_DIR$/src/com/leetr/countr/provider/CounterProvider.java" />
+        <option value="$PROJECT_DIR$/src/com/leetr/countr/model/Counter.java" />
+        <option value="$PROJECT_DIR$/src/com/leetr/countr/EditCounterActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/leetr/countr/DbHelper.java" />
+        <option value="$PROJECT_DIR$/src/com/leetr/countr/model/CounterItem.java" />
+        <option value="$PROJECT_DIR$/src/com/leetr/countr/listener/OnCounterSelectedListener.java" />
+        <option value="$PROJECT_DIR$/src/com/leetr/countr/fragment/CounterListFragment.java" />
+        <option value="$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/activity/LeetrDashboardActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/leetr/countr/CounterListActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/leetr/countr/CounterDetailsActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/edit_counter.xml" />
+        <option value="$PROJECT_DIR$/res/layout/counter_details.xml" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -260,16 +331,6 @@
               <option name="myItemId" value="Countr" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Countr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -277,7 +338,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Countr" />
+              <option name="myItemId" value="library" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -287,7 +348,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="leetr-android-library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Countr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leetr-android-library" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -295,7 +366,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="countr" />
+              <option name="myItemId" value="leetr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Countr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leetr-android-library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leetr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Countr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Countr" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -309,15 +412,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="countr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="provider" />
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -331,15 +426,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="countr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -353,15 +444,47 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="countr" />
+              <option name="myItemId" value="drawable-mdpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Countr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Countr" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fragment" />
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-ldpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Countr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Countr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-hdpi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -387,8 +510,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Favorites" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -405,16 +528,16 @@
     <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="countr" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="countr" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -600,23 +723,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="1028" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3278328" sideWeight="0.49785408" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39908952" sideWeight="0.4782342" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3278328" sideWeight="0.4908088" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39823982" sideWeight="0.47610295" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.49496403" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32776934" sideWeight="0.38442674" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32673267" sideWeight="0.37867647" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23468137" sideWeight="0.71727175" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24387255" sideWeight="0.6171617" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28272828" sideWeight="0.2935049" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5269527" sideWeight="0.70159316" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38283828" sideWeight="0.28186274" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38283828" sideWeight="0.7132353" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39950982" sideWeight="0.6706136" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -670,92 +794,120 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+    <entry file="file://$PROJECT_DIR$/../leetr-android/external/actionbarsherlock/library/src/android/support/v4/app/ListFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="11" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/leetr/countr/CounterDetailsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="19" selection-start="2534" selection-end="2534" vertical-scroll-proportion="1.6475409" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/counter_details.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="27" selection-start="3318" selection-end="3318" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../leetr-android/src/com/leetr/fragment/LeetrActionBarFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../leetr-android/res/layout/leetr_app_layout.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/leetr/countr/CounterListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="92" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../leetr-android/res/values/settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="18" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/leetr/countr/DbHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="80" selection-start="1248" selection-end="1248" vertical-scroll-proportion="0.42857143" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../android-sdk-mac_86/platforms/android-13/android.jar!/android/text/TextUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="26" selection-start="2573" selection-end="2573" vertical-scroll-proportion="0.33282208" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="83" selection-start="1216" selection-end="1216" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../leetr-android/src/com/leetr/core/db/LeetrDbHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="84" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="35" selection-start="635" selection-end="635" vertical-scroll-proportion="0.0">
+        <state line="41" column="37" selection-start="1549" selection-end="1549" vertical-scroll-proportion="0.3233831">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/leetr/countr/fragment/CounterListFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/leetr/countr/provider/CounterProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="35" selection-start="4653" selection-end="4653" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="60" column="63" selection-start="1945" selection-end="1945" vertical-scroll-proportion="0.14648438">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/leetr/countr/model/CounterItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
+        <state line="68" column="0" selection-start="2688" selection-end="2688" vertical-scroll-proportion="0.02819549">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/leetr/countr/provider/CounterProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="50" selection-start="981" selection-end="981" vertical-scroll-proportion="0.02819549">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/leetr/countr/model/Counter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="8" selection-start="1465" selection-end="1465" vertical-scroll-proportion="0.8908507">
+        <state line="20" column="17" selection-start="731" selection-end="731" vertical-scroll-proportion="0.02819549">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../leetr-android/external/actionbarsherlock/library/src/android/support/v4/app/FragmentActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="35" selection-start="711" selection-end="711" vertical-scroll-proportion="0.05639098">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/leetr/countr/listener/OnCounterSelectedListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="43" selection-start="228" selection-end="228" vertical-scroll-proportion="0.25375938">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../leetr-android/external/actionbarsherlock/library/res/values/abs__styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="41" selection-start="1465" selection-end="1465" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../leetr-android/leetr-android-library/src/com/leetr/activity/LeetrDashboardActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="43" selection-start="650" selection-end="650" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/leetr/countr/CounterListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="50" selection-start="940" selection-end="940" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/leetr/countr/CounterDetailsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="41" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/edit_counter.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="4" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/listitem_counter.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="40" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/counter_details.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="49" selection-start="737" selection-end="737" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../leetr-android/external/actionbarsherlock/library/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="33" selection-start="258" selection-end="258" vertical-scroll-proportion="0.17578125">
           <folding />
         </state>
       </provider>
@@ -814,7 +966,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Countr</last-edited>
+          <last-edited>ActionBarSherlock</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -827,7 +979,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>jackson-core-asl-1.8.0</last-edited>
+          <last-edited>libGoogleAnalytics</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

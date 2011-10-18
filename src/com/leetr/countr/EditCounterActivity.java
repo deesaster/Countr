@@ -8,9 +8,6 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.deesastudio.countr.R;
-import com.leetr.countr.model.Counter;
-
 public class EditCounterActivity extends Activity {
     private EditText mCounterTitleEdit;
 
@@ -49,8 +46,8 @@ public class EditCounterActivity extends Activity {
 
     private void finishWithResult() {
         Intent dataIntent = new Intent();
-        dataIntent.putExtra(Counter.KEY_TITLE, mCounterTitleEdit.getText()
-                .toString());
+//        dataIntent.putExtra(Counter.KEY_TITLE, mCounterTitleEdit.getText()
+//                .toString());
         setResult(Activity.RESULT_OK, dataIntent);
         finish();
     }

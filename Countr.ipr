@@ -36,6 +36,19 @@
         <modules>
           <module name="Countr" />
           <module name="Countr" />
+          <module name="LeetrBase">
+            <files>
+              <file url="file://$PROJECT_DIR$/../leetr-android/AndroidManifest.xml" />
+              <file url="file://$PROJECT_DIR$/../leetr-android/external/actionbarsherlock/library/AndroidManifest.xml" />
+              <file url="file://$PROJECT_DIR$/../leetr-android/external/actionbarsherlock/plugins/maps/AndroidManifest.xml" />
+              <file url="file://$PROJECT_DIR$/../leetr-android/external/actionbarsherlock/samples/demos/AndroidManifest.xml" />
+              <file url="file://$PROJECT_DIR$/../leetr-android/external/actionbarsherlock/samples/shakespeare/AndroidManifest.xml" />
+              <file url="file://$PROJECT_DIR$/../leetr-android/external/actionbarsherlock/samples/styled/AndroidManifest.xml" />
+              <file url="file://$PROJECT_DIR$/../leetr-android/external/actionbarsherlock/test/app/AndroidManifest.xml" />
+              <file url="file://$PROJECT_DIR$/../leetr-android/external/actionbarsherlock/test/runner/AndroidManifest.xml" />
+              <file url="file://$PROJECT_DIR$/../leetr-android/leetr-android-library/AndroidManifest.xml" />
+            </files>
+          </module>
         </modules>
       </facet-type>
     </autodetection-disabled>
@@ -202,8 +215,10 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../leetr-android/external//ActionBarSherlock.iml" filepath="$PROJECT_DIR$/../leetr-android/external//ActionBarSherlock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../leetr-android/external//ActionBarSherlock.iml" filepath="$PROJECT_DIR$/../leetr-android/external//ActionBarSherlock.iml" />
       <module fileurl="file://$PROJECT_DIR$/Countr.iml" filepath="$PROJECT_DIR$/Countr.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../leetr-android/LeetrBase.iml" filepath="$PROJECT_DIR$/../leetr-android/LeetrBase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../leetr-android/leetr-android-library/android-leetr-library.iml" filepath="$PROJECT_DIR$/../leetr-android/leetr-android-library/android-leetr-library.iml" />
     </modules>
   </component>
   <component name="ProjectResources">
@@ -219,21 +234,21 @@
   <component name="libraryTable">
     <library name="jackson-core-asl-1.8.0">
       <CLASSES>
-        <root url="jar://$PROJECT_DIR$/../leetr-android/libs/jackson-core-asl-1.8.0.jar!/" />
+        <root url="jar://$PROJECT_DIR$/../leetr-android/leetr-android-library/libs/jackson-core-asl-1.8.0.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES />
     </library>
     <library name="jackson-mapper-asl-1.8.0">
       <CLASSES>
-        <root url="jar://$PROJECT_DIR$/../leetr-android/libs/jackson-mapper-asl-1.8.0.jar!/" />
+        <root url="jar://$PROJECT_DIR$/../leetr-android/leetr-android-library/libs/jackson-mapper-asl-1.8.0.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES />
     </library>
     <library name="libGoogleAnalytics">
       <CLASSES>
-        <root url="jar://$PROJECT_DIR$/../leetr-android/libs/libGoogleAnalytics.jar!/" />
+        <root url="jar://$PROJECT_DIR$/../leetr-android/leetr-android-library/libs/libGoogleAnalytics.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES />

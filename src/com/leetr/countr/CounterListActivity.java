@@ -7,9 +7,9 @@ import android.widget.ListView;
 import com.leetr.R;
 import com.leetr.activity.LeetrActivity;
 import com.leetr.countr.fragment.CounterListFragment;
-import com.leetr.fragment.LeetrActionBarFragment;
+import com.leetr.countr.listener.OnCounterSelectedListener;
 
-public class CounterListActivity extends LeetrActivity {
+public class CounterListActivity extends LeetrActivity implements OnCounterSelectedListener {
     public static final String COUNTER_ID = "CounterId";
 
     private static final int NEW_COUNTER_REQUEST_CODE = 1;
@@ -30,7 +30,6 @@ public class CounterListActivity extends LeetrActivity {
         setContentView(R.layout.leetr_app_layout);
 
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.headerBar, new LeetrActionBarFragment()).commit();
             getSupportFragmentManager().beginTransaction().replace(R.id.content, new CounterListFragment()).commit();
         }
 //        setContentView(R.layout.counter_list);
@@ -137,5 +136,11 @@ public class CounterListActivity extends LeetrActivity {
 //
 //        detailsIntent.putExtra(Counter.KEY_ID, rowId);
 //        startActivity(detailsIntent);
+    }
+
+    @Override
+    public void onCounterSelected(long id) {
+        Intent intent = new Intent(this, CounterDetailsActivity.class);
+        startActivity(intent);
     }
 }

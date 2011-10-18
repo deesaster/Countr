@@ -1,17 +1,11 @@
 package com.leetr.countr;
 
-import android.app.Activity;
-import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
 import android.widget.ListView;
-import android.widget.SimpleCursorAdapter;
 import android.widget.ViewFlipper;
-import com.deesastudio.countr.R;
-import com.leetr.countr.model.Counter;
-import com.leetr.countr.model.CounterItem;
+import com.leetr.activity.LeetrActivity;
 
-public class CounterDetailsActivity extends Activity {
+public class CounterDetailsActivity extends LeetrActivity {
 
     private static final int CONTEXTMENU_DELETE = 1;
 
@@ -26,22 +20,22 @@ public class CounterDetailsActivity extends Activity {
 
         setContentView(R.layout.counter_details);
 
-        Intent launchIntent = getIntent();
-        if (launchIntent.hasExtra(Counter.KEY_ID)) {
-            mCounterId = launchIntent.getExtras().getLong(Counter.KEY_ID);
-        }
-
-        initUiComponents();
-
-        mDbHelper = DbHelper.open(getApplicationContext());
-        populateList();
+//        Intent launchIntent = getIntent();
+//        if (launchIntent.hasExtra(Counter.KEY_ID)) {
+//            mCounterId = launchIntent.getExtras().getLong(Counter.KEY_ID);
+//        }
+//
+//        initUiComponents();
+//
+//        mDbHelper = DbHelper.open(getApplicationContext());
+//        populateList();
     }
 
     @Override
     protected void onDestroy() {
-        if (mDbHelper != null) {
-            mDbHelper.close();
-        }
+//        if (mDbHelper != null) {
+//            mDbHelper.close();
+//        }
         super.onDestroy();
     }
 
@@ -94,20 +88,20 @@ public class CounterDetailsActivity extends Activity {
     }
 
     private void increment(float value) {
-        CounterItem.add(mDbHelper, mCounterId, value, 0, 0);
-        populateList();
+//        CounterItem.add(mDbHelper, mCounterId, value, 0, 0);
+//        populateList();
     }
 
     private void populateList() {
-        Cursor c = CounterItem.itemsForCounter(mDbHelper, mCounterId);
-        startManagingCursor(c);
-
-        String[] source = new String[]{CounterItem.KEY_TIMESTAMP};
-        int[] dest = new int[]{R.id.textTimestamp};
-
-        SimpleCursorAdapter cursorAdapter = new SimpleCursorAdapter(this,
-                R.layout.listitem_counteritem, c, source, dest);
-
-        mItemsListView.setAdapter(cursorAdapter);
+//        Cursor c = CounterItem.itemsForCounter(mDbHelper, mCounterId);
+//        startManagingCursor(c);
+//
+//        String[] source = new String[]{CounterItem.KEY_TIMESTAMP};
+//        int[] dest = new int[]{R.id.textTimestamp};
+//
+//        SimpleCursorAdapter cursorAdapter = new SimpleCursorAdapter(this,
+//                R.layout.listitem_counteritem, c, source, dest);
+//
+//        mItemsListView.setAdapter(cursorAdapter);
     }
 }

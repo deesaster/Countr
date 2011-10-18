@@ -4,10 +4,7 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:background="@android:color/white">
-    
-    <include android:id="@+id/headerView"
-        layout="@layout/header_layout" />
-    
+
     <TextView 
         android:layout_width="fill_parent" 
         android:layout_height="wrap_content"

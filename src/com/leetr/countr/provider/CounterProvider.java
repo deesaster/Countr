@@ -27,10 +27,10 @@ public class CounterProvider extends ContentProvider {
 
     static {
         sCountersProjectionMap = new HashMap<String, String>();
-        sCountersProjectionMap.put(MetaData.Counter._ID,
-                MetaData.Counter._ID);
-        sCountersProjectionMap.put(MetaData.Counter.COUNTER_NAME,
-                MetaData.Counter.COUNTER_NAME);
+        sCountersProjectionMap.put(CounterMetaData._ID,
+                CounterMetaData._ID);
+        sCountersProjectionMap.put(CounterMetaData.COUNTER_NAME,
+                CounterMetaData.COUNTER_NAME);
     }
 
     private static final UriMatcher sUriMatcher;
@@ -39,8 +39,8 @@ public class CounterProvider extends ContentProvider {
 
     static {
         sUriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
-        sUriMatcher.addURI(MetaData.AUTHORITY, "counters", COUNTER_COLLECTION_URI_INDICATOR);
-        sUriMatcher.addURI(MetaData.AUTHORITY, "counters/#", SINGLE_COUNTER_URI_INDICATOR);
+        sUriMatcher.addURI(CounterMetaData.AUTHORITY, "counters", COUNTER_COLLECTION_URI_INDICATOR);
+        sUriMatcher.addURI(CounterMetaData.AUTHORITY, "counters/#", SINGLE_COUNTER_URI_INDICATOR);
     }
 
     private LeetrDbHelper mDbHelper;
@@ -57,13 +57,13 @@ public class CounterProvider extends ContentProvider {
 
         switch (sUriMatcher.match(uri)) {
             case COUNTER_COLLECTION_URI_INDICATOR:
-                builder.setTables(MetaData.Counter.TABLE_NAME);
+                builder.setTables(CounterMetaData.TABLE_NAME);
                 builder.setProjectionMap(sCountersProjectionMap);
                 break;
             case SINGLE_COUNTER_URI_INDICATOR:
-                builder.setTables(MetaData.Counter.TABLE_NAME);
+                builder.setTables(CounterMetaData.TABLE_NAME);
                 builder.setProjectionMap(sCountersProjectionMap);
-                builder.appendWhere(MetaData.Counter._ID + "=" + uri.getPathSegments().get(1));
+                builder.appendWhere(CounterMetaData._ID + "=" + uri.getPathSegments().get(1));
                 break;
             default:
                 throw new IllegalArgumentException("Unknown URI " + uri);
@@ -71,7 +71,7 @@ public class CounterProvider extends ContentProvider {
 
         String orderBy;
         if (TextUtils.isEmpty(sortOrder)) {
-            orderBy = MetaData.Counter.DEFAULT_SORT_ORDER;
+            orderBy = CounterMetaData.DEFAULT_SORT_ORDER;
         } else {
             orderBy = sortOrder;
         }
@@ -87,9 +87,9 @@ public class CounterProvider extends ContentProvider {
     public String getType(Uri uri) {
         switch (sUriMatcher.match(uri)) {
             case COUNTER_COLLECTION_URI_INDICATOR:
-                return MetaData.Counter.CONTENT_TYPE;
+                return CounterMetaData.CONTENT_TYPE;
             case SINGLE_COUNTER_URI_INDICATOR:
-                return MetaData.Counter.CONTENT_ITEM_TYPE;
+                return CounterMetaData.CONTENT_ITEM_TYPE;
             default:
                 throw new IllegalArgumentException("Unknown URI " + uri);
         }
@@ -109,15 +109,15 @@ public class CounterProvider extends ContentProvider {
             values = new ContentValues();
         }
 
-        if (!values.containsKey(MetaData.Counter.COUNTER_NAME)) {
+        if (!values.containsKey(CounterMetaData.COUNTER_NAME)) {
             throw new RuntimeException("Failed to add counter, counter name required");
         }
 
         SQLiteDatabase db = mDbHelper.openDb();
-        long rowId = db.insert(MetaData.Counter.TABLE_NAME, MetaData.Counter.TABLE_NAME, values);
+        long rowId = db.insert(CounterMetaData.TABLE_NAME, CounterMetaData.TABLE_NAME, values);
 
         if (rowId > 0) {
-            Uri insertedUri = ContentUris.withAppendedId(MetaData.Counter.CONTENT_URI, rowId);
+            Uri insertedUri = ContentUris.withAppendedId(CounterMetaData.CONTENT_URI, rowId);
             getContext().getContentResolver().notifyChange(insertedUri, null);
 
             return insertedUri;
@@ -136,25 +136,20 @@ public class CounterProvider extends ContentProvider {
         return 0;
     }
 
-    public static class MetaData {
+    public static class CounterMetaData implements BaseColumns {
         public static final String AUTHORITY = "com.leetr.countr.provider.CounterProvider";
 
-        private MetaData() {
-        }
+        public static final String TABLE_NAME = "counter";
+        public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/counters");
+        public static final String CONTENT_TYPE = "vnd.android.cursor.dir/vnd.leetr.countr.counter";
+        public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.leetr.countr.counter";
 
-        public static final class Counter implements BaseColumns {
-            private Counter() {
-            }
+        public static final String DEFAULT_SORT_ORDER = "sort_order ASC";
 
-            public static final String TABLE_NAME = "counter";
-            public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/counters");
-            public static final String CONTENT_TYPE = "vnd.android.cursor.dir/vnd.leetr.countr.counter";
-            public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.leetr.countr.counter";
+        //columns
+        public static final String COUNTER_NAME = "name";
 
-            public static final String DEFAULT_SORT_ORDER = "sort_order ASC";
-
-            //columns
-            public static final String COUNTER_NAME = "name";
+        private CounterMetaData() {
         }
     }
 }
