@@ -8,8 +8,11 @@
 package com.leetr.countr;
 
 public final class R {
+    public static final class anim {
+        public static final int slide_in_top=0x7f040000;
+    }
     public static final class array {
-        public static final int settings_db_create_queries=0x7f0a0000;
+        public static final int settings_db_create_queries=0x7f0b0000;
     }
     public static final class attr {
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -260,22 +263,22 @@ containing a value of this type.
     public static final class bool {
         /**  Location Settings 
          */
-        public static final int settings_location_enabled=0x7f090001;
+        public static final int settings_location_enabled=0x7f0a0001;
         /**  Splash Settings 
          */
-        public static final int settings_splash_show=0x7f090000;
+        public static final int settings_splash_show=0x7f0a0000;
     }
     public static final class color {
-        public static final int abs__item_bg=0x7f050005;
-        public static final int abs__item_focused=0x7f050000;
-        public static final int abs__tab_text_color_dark=0x7f050006;
-        public static final int abs__tab_text_color_light=0x7f050007;
-        public static final int listitem_counter_divider=0x7f050004;
-        public static final int listitem_counter_title=0x7f050003;
+        public static final int abs__item_bg=0x7f060005;
+        public static final int abs__item_focused=0x7f060000;
+        public static final int abs__tab_text_color_dark=0x7f060006;
+        public static final int abs__tab_text_color_light=0x7f060007;
+        public static final int listitem_counter_divider=0x7f060004;
+        public static final int listitem_counter_title=0x7f060003;
         /**  Header Settings 
          */
-        public static final int settings_header_bar_bg_color=0x7f050002;
-        public static final int settings_splash_bg_color=0x7f050001;
+        public static final int settings_header_bar_bg_color=0x7f060002;
+        public static final int settings_splash_bg_color=0x7f060001;
     }
     public static final class drawable {
         public static final int abs__action_item_divider=0x7f020000;
@@ -335,64 +338,70 @@ containing a value of this type.
         public static final int test_unpressed=0x7f020034;
     }
     public static final class id {
-        public static final int abs__action_bar=0x7f04001a;
-        public static final int abs__action_bar_container=0x7f040019;
-        public static final int abs__action_bar_subtitle=0x7f040018;
-        public static final int abs__action_bar_title=0x7f040017;
-        public static final int abs__actions=0x7f04000c;
-        public static final int abs__content=0x7f04001b;
-        public static final int abs__custom=0x7f04000f;
-        public static final int abs__home=0x7f04000b;
-        public static final int abs__home_wrapper=0x7f040009;
-        public static final int abs__iprogress=0x7f04000d;
-        public static final int abs__item_custom=0x7f040013;
-        public static final int abs__item_icon=0x7f040011;
-        public static final int abs__item_text=0x7f040012;
-        public static final int abs__nav_list=0x7f04000e;
-        public static final int abs__nav_tabs=0x7f040010;
-        public static final int abs__tab=0x7f040015;
-        public static final int abs__tab_custom=0x7f040016;
-        public static final int abs__tab_icon=0x7f040014;
-        public static final int abs__up=0x7f04000a;
-        public static final int applyButton=0x7f04001e;
-        public static final int bottomBar=0x7f040024;
-        public static final int cancelButton=0x7f04001f;
-        public static final int content=0x7f040025;
-        public static final int content2=0x7f040026;
-        public static final int contentMain=0x7f040027;
-        public static final int contentMain2=0x7f040028;
-        public static final int contextActionsContainer=0x7f040021;
-        public static final int counterTitleEditText=0x7f04001d;
-        public static final int counterTitleTextView=0x7f04001c;
-        public static final int empty_picture=0x7f040029;
-        public static final int empty_text=0x7f04002a;
-        public static final int headerBar=0x7f040022;
-        public static final int homeAsUp=0x7f040006;
-        public static final int listMode=0x7f040002;
-        public static final int listlist=0x7f04002e;
-        public static final int logo=0x7f040020;
-        public static final int normal=0x7f040001;
-        public static final int showCustom=0x7f040008;
-        public static final int showHome=0x7f040005;
-        public static final int showTitle=0x7f040007;
-        public static final int splashImage=0x7f04002c;
-        public static final int tabHolder=0x7f04002b;
-        public static final int tabMode=0x7f040003;
-        public static final int textCounterTitle=0x7f04002f;
-        public static final int textCounterValue=0x7f040030;
-        public static final int textTimestamp=0x7f040031;
-        public static final int topBar=0x7f040023;
-        public static final int useLogo=0x7f040004;
-        public static final int webView=0x7f04002d;
-        public static final int wrap_content=0x7f040000;
+        public static final int abs__action_bar=0x7f05001a;
+        public static final int abs__action_bar_container=0x7f050019;
+        public static final int abs__action_bar_subtitle=0x7f050018;
+        public static final int abs__action_bar_title=0x7f050017;
+        public static final int abs__actions=0x7f05000c;
+        public static final int abs__content=0x7f05001b;
+        public static final int abs__custom=0x7f05000f;
+        public static final int abs__home=0x7f05000b;
+        public static final int abs__home_wrapper=0x7f050009;
+        public static final int abs__iprogress=0x7f05000d;
+        public static final int abs__item_custom=0x7f050013;
+        public static final int abs__item_icon=0x7f050011;
+        public static final int abs__item_text=0x7f050012;
+        public static final int abs__nav_list=0x7f05000e;
+        public static final int abs__nav_tabs=0x7f050010;
+        public static final int abs__tab=0x7f050015;
+        public static final int abs__tab_custom=0x7f050016;
+        public static final int abs__tab_icon=0x7f050014;
+        public static final int abs__up=0x7f05000a;
+        public static final int add_counter=0x7f050037;
+        public static final int applyButton=0x7f05001e;
+        public static final int bottomBar=0x7f050029;
+        public static final int bottomFragment=0x7f050025;
+        public static final int cancelButton=0x7f05001f;
+        public static final int content=0x7f05002a;
+        public static final int content2=0x7f05002b;
+        public static final int contentMain=0x7f05002c;
+        public static final int contentMain2=0x7f05002d;
+        public static final int contextActionsContainer=0x7f050023;
+        public static final int count=0x7f050021;
+        public static final int counterTitleEditText=0x7f05001d;
+        public static final int empty_picture=0x7f05002e;
+        public static final int empty_text=0x7f05002f;
+        public static final int headerBar=0x7f050027;
+        public static final int homeAsUp=0x7f050006;
+        public static final int listMode=0x7f050002;
+        public static final int listlist=0x7f050033;
+        public static final int logo=0x7f050022;
+        public static final int middleFragment=0x7f050026;
+        public static final int name=0x7f050020;
+        public static final int normal=0x7f050001;
+        public static final int pager=0x7f05001c;
+        public static final int showCustom=0x7f050008;
+        public static final int showHome=0x7f050005;
+        public static final int showTitle=0x7f050007;
+        public static final int splashImage=0x7f050031;
+        public static final int tabHolder=0x7f050030;
+        public static final int tabMode=0x7f050003;
+        public static final int textCounterTitle=0x7f050034;
+        public static final int textCounterValue=0x7f050035;
+        public static final int textTimestamp=0x7f050036;
+        public static final int topBar=0x7f050028;
+        public static final int topFragment=0x7f050024;
+        public static final int useLogo=0x7f050004;
+        public static final int webView=0x7f050032;
+        public static final int wrap_content=0x7f050000;
     }
     public static final class integer {
-        public static final int abs__max_action_buttons=0x7f060000;
+        public static final int abs__max_action_buttons=0x7f070000;
         /**  15 min 
          */
-        public static final int settings_location_max_update_distance=0x7f060003;
-        public static final int settings_location_max_update_time=0x7f060002;
-        public static final int settings_splash_duration_mil=0x7f060001;
+        public static final int settings_location_max_update_distance=0x7f070003;
+        public static final int settings_location_max_update_time=0x7f070002;
+        public static final int settings_splash_duration_mil=0x7f070001;
     }
     public static final class layout {
         public static final int abs__action_bar=0x7f030000;
@@ -407,82 +416,87 @@ containing a value of this type.
         public static final int abs__screen_action_bar_overlay=0x7f030009;
         public static final int abs__screen_simple=0x7f03000a;
         public static final int abs__simple_spinner_item=0x7f03000b;
-        public static final int counter_details=0x7f03000c;
+        public static final int activity_counter_details=0x7f03000c;
         public static final int edit_counter=0x7f03000d;
-        public static final int leetr_action_bar=0x7f03000e;
-        public static final int leetr_app_layout=0x7f03000f;
-        public static final int leetr_list_layout=0x7f030010;
-        public static final int leetr_navigation_tabs=0x7f030011;
-        public static final int leetr_splash=0x7f030012;
-        public static final int leetr_web_fragment=0x7f030013;
-        public static final int list_with_empty_text=0x7f030014;
-        public static final int listitem_counter=0x7f030015;
-        public static final int listitem_counteritem=0x7f030016;
-        public static final int main=0x7f030017;
+        public static final int fragment_counter_details=0x7f03000e;
+        public static final int fragment_counter_stats=0x7f03000f;
+        public static final int leetr_action_bar=0x7f030010;
+        public static final int leetr_app_layout=0x7f030011;
+        public static final int leetr_list_layout=0x7f030012;
+        public static final int leetr_navigation_tabs=0x7f030013;
+        public static final int leetr_splash=0x7f030014;
+        public static final int leetr_web_fragment=0x7f030015;
+        public static final int list_with_empty_text=0x7f030016;
+        public static final int listitem_counter=0x7f030017;
+        public static final int listitem_counteritem=0x7f030018;
+        public static final int main=0x7f030019;
+    }
+    public static final class menu {
+        public static final int menu_counter_list=0x7f0c0000;
     }
     public static final class string {
-        public static final int abs__tab_under_ab_tag=0x7f070000;
-        public static final int app_name=0x7f070001;
-        public static final int app_namespace=0x7f070002;
-        public static final int counter_details_label=0x7f070007;
-        public static final int counter_title=0x7f070008;
-        public static final int delete=0x7f070009;
-        public static final int edit=0x7f07000a;
-        public static final int new_counter_label=0x7f070006;
+        public static final int abs__tab_under_ab_tag=0x7f080000;
+        public static final int app_name=0x7f080001;
+        public static final int app_namespace=0x7f080002;
+        public static final int counter_details_label=0x7f080007;
+        public static final int counter_title=0x7f080008;
+        public static final int delete=0x7f080009;
+        public static final int edit=0x7f08000a;
+        public static final int new_counter_label=0x7f080006;
         /**  Dashboard Settings 
          */
-        public static final int settings_dashboard_activity_class=0x7f070003;
+        public static final int settings_dashboard_activity_class=0x7f080003;
         /**  Db Settings 
  Db Settings 
          */
-        public static final int settings_db_name=0x7f070004;
+        public static final int settings_db_name=0x7f080004;
         /**  Google Analytics 
          */
-        public static final int settings_google_analytics_code=0x7f070005;
+        public static final int settings_google_analytics_code=0x7f080005;
     }
     public static final class style {
-        public static final int Internal_Widget_Sherlock_ActionBar=0x7f08001c;
-        public static final int Internal_Widget_Sherlock_Light_ActionBar=0x7f08001d;
+        public static final int Internal_Widget_Sherlock_ActionBar=0x7f09001c;
+        public static final int Internal_Widget_Sherlock_Light_ActionBar=0x7f09001d;
         /**  Action Bar 
          */
-        public static final int LeetrActionBar=0x7f080020;
-        public static final int LeetrActionBar_Buttons=0x7f080022;
-        public static final int LeetrActionBar_Logo=0x7f080021;
-        public static final int TextAppearance_Widget_Subtitle=0x7f08001b;
-        public static final int TextAppearance_Widget_Title=0x7f08001a;
+        public static final int LeetrActionBar=0x7f090020;
+        public static final int LeetrActionBar_Buttons=0x7f090022;
+        public static final int LeetrActionBar_Logo=0x7f090021;
+        public static final int TextAppearance_Widget_Subtitle=0x7f09001b;
+        public static final int TextAppearance_Widget_Title=0x7f09001a;
         /**  Global Style 
          */
-        public static final int Theme_LeetrBase=0x7f08001e;
+        public static final int Theme_LeetrBase=0x7f09001e;
         /**  List Style 
          */
-        public static final int Theme_LeetrBase_List=0x7f08001f;
-        public static final int Theme_Sherlock=0x7f080000;
-        public static final int Theme_Sherlock_Light=0x7f08000d;
-        public static final int Theme_Vancouver=0x7f080023;
-        public static final int Widget_Sherlock_ActionBar_TabBar=0x7f080001;
-        public static final int Widget_Sherlock_ActionBar_TabText=0x7f080003;
-        public static final int Widget_Sherlock_ActionBar_TabView=0x7f080002;
-        public static final int Widget_Sherlock_ActionButton=0x7f080004;
-        public static final int Widget_Sherlock_ActionButton_CloseMode=0x7f080006;
-        public static final int Widget_Sherlock_ActionButton_Home=0x7f080007;
-        public static final int Widget_Sherlock_ActionButton_Overflow=0x7f080008;
-        public static final int Widget_Sherlock_Light_ActionBar_TabBar=0x7f08000e;
-        public static final int Widget_Sherlock_Light_ActionBar_TabText=0x7f080010;
-        public static final int Widget_Sherlock_Light_ActionBar_TabView=0x7f08000f;
-        public static final int Widget_Sherlock_Light_ActionButton=0x7f080011;
-        public static final int Widget_Sherlock_Light_ActionButton_CloseMode=0x7f080016;
-        public static final int Widget_Sherlock_Light_ActionButton_Home=0x7f080012;
-        public static final int Widget_Sherlock_Light_ActionButton_Overflow=0x7f080013;
-        public static final int Widget_Sherlock_Light_ListPopupWindow=0x7f080018;
-        public static final int Widget_Sherlock_Light_ListView_DropDown=0x7f080017;
-        public static final int Widget_Sherlock_Light_PopupMenu=0x7f080019;
-        public static final int Widget_Sherlock_Light_Spinner=0x7f080015;
-        public static final int Widget_Sherlock_Light_TextView_SpinnerItem_ActionBar=0x7f080014;
-        public static final int Widget_Sherlock_ListPopupWindow=0x7f08000a;
-        public static final int Widget_Sherlock_ListView_DropDown=0x7f08000b;
-        public static final int Widget_Sherlock_PopupMenu=0x7f08000c;
-        public static final int Widget_Sherlock_Spinner=0x7f080005;
-        public static final int Widget_Sherlock_TextView_SpinnerItem_ActionBar=0x7f080009;
+        public static final int Theme_LeetrBase_List=0x7f09001f;
+        public static final int Theme_Sherlock=0x7f090000;
+        public static final int Theme_Sherlock_Light=0x7f09000d;
+        public static final int Theme_Vancouver=0x7f090023;
+        public static final int Widget_Sherlock_ActionBar_TabBar=0x7f090001;
+        public static final int Widget_Sherlock_ActionBar_TabText=0x7f090003;
+        public static final int Widget_Sherlock_ActionBar_TabView=0x7f090002;
+        public static final int Widget_Sherlock_ActionButton=0x7f090004;
+        public static final int Widget_Sherlock_ActionButton_CloseMode=0x7f090006;
+        public static final int Widget_Sherlock_ActionButton_Home=0x7f090007;
+        public static final int Widget_Sherlock_ActionButton_Overflow=0x7f090008;
+        public static final int Widget_Sherlock_Light_ActionBar_TabBar=0x7f09000e;
+        public static final int Widget_Sherlock_Light_ActionBar_TabText=0x7f090010;
+        public static final int Widget_Sherlock_Light_ActionBar_TabView=0x7f09000f;
+        public static final int Widget_Sherlock_Light_ActionButton=0x7f090011;
+        public static final int Widget_Sherlock_Light_ActionButton_CloseMode=0x7f090016;
+        public static final int Widget_Sherlock_Light_ActionButton_Home=0x7f090012;
+        public static final int Widget_Sherlock_Light_ActionButton_Overflow=0x7f090013;
+        public static final int Widget_Sherlock_Light_ListPopupWindow=0x7f090018;
+        public static final int Widget_Sherlock_Light_ListView_DropDown=0x7f090017;
+        public static final int Widget_Sherlock_Light_PopupMenu=0x7f090019;
+        public static final int Widget_Sherlock_Light_Spinner=0x7f090015;
+        public static final int Widget_Sherlock_Light_TextView_SpinnerItem_ActionBar=0x7f090014;
+        public static final int Widget_Sherlock_ListPopupWindow=0x7f09000a;
+        public static final int Widget_Sherlock_ListView_DropDown=0x7f09000b;
+        public static final int Widget_Sherlock_PopupMenu=0x7f09000c;
+        public static final int Widget_Sherlock_Spinner=0x7f090005;
+        public static final int Widget_Sherlock_TextView_SpinnerItem_ActionBar=0x7f090009;
     }
     public static final class styleable {
         /** Attributes that can be used with a SherlockTheme.

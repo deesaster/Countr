@@ -11,9 +11,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ListAdapter;
 import android.widget.SimpleCursorAdapter;
 import com.leetr.R;
-import com.leetr.core.db.LeetrDbHelper;
 import com.leetr.countr.listener.OnCounterSelectedListener;
 import com.leetr.countr.provider.CounterProvider;
 
@@ -28,7 +28,7 @@ public class CounterListFragment extends ListFragment implements LoaderManager.L
 
     private LayoutInflater mInflater;
     private View mLayout;
-    private LeetrDbHelper mDbHelper;
+    //    private LeetrDbHelper mDbHelper;
     private SimpleCursorAdapter mCursorAdapter;
     private OnCounterSelectedListener mOnCounterSelectedListener;
 
@@ -42,7 +42,7 @@ public class CounterListFragment extends ListFragment implements LoaderManager.L
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mInflater = inflater;
-        mLayout = inflater.inflate(R.layout.leetr_list_layout, null, false);
+        mLayout = inflater.inflate(R.layout.leetr_list_layout, container, false);
         return mLayout;
     }
 
@@ -50,8 +50,8 @@ public class CounterListFragment extends ListFragment implements LoaderManager.L
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        mDbHelper = new LeetrDbHelper(mInflater.getContext());
-        mDbHelper.openDb();
+//        mDbHelper = new LeetrDbHelper(mInflater.getContext());
+//        mDbHelper.openDb();
 
         getLoaderManager().initLoader(COUNTER_LIST_LOADER, null, this);
 
@@ -71,17 +71,18 @@ public class CounterListFragment extends ListFragment implements LoaderManager.L
 //                cr.insert(CounterProvider.CounterMetaData.CONTENT_URI, values);
             }
         });
-        initAdapter(null);
+        getListView().setAdapter(initAdapter(null));
     }
 
-    private void initAdapter(Cursor cursor) {
+    private ListAdapter initAdapter(Cursor cursor) {
         String[] source = new String[]{CounterProvider.CounterMetaData.COUNTER_NAME};
         int[] dest = new int[]{R.id.textCounterTitle};
 
         SimpleCursorAdapter cursorAdapter = new SimpleCursorAdapter(mInflater.getContext(),
                 R.layout.listitem_counter, cursor, source, dest);
 
-        getListView().setAdapter(cursorAdapter);
+
+        return cursorAdapter;
     }
 
     @Override
@@ -94,7 +95,7 @@ public class CounterListFragment extends ListFragment implements LoaderManager.L
 
     @Override
     public void onLoadFinished(Loader<Cursor> cursorLoader, Cursor cursor) {
-        initAdapter(cursor);
+        getListView().setAdapter(initAdapter(cursor));
     }
 
     @Override

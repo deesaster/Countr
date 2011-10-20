@@ -2,14 +2,18 @@ package com.leetr.countr;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.ActionBar;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
 import com.leetr.R;
 import com.leetr.activity.LeetrActivity;
 import com.leetr.countr.fragment.CounterListFragment;
 import com.leetr.countr.listener.OnCounterSelectedListener;
+import com.leetr.countr.model.Counter;
 
-public class CounterListActivity extends LeetrActivity implements OnCounterSelectedListener {
+public class CounterListActivity extends LeetrActivity implements OnCounterSelectedListener, ActionBar.TabListener {
     public static final String COUNTER_ID = "CounterId";
 
     private static final int NEW_COUNTER_REQUEST_CODE = 1;
@@ -29,8 +33,17 @@ public class CounterListActivity extends LeetrActivity implements OnCounterSelec
 
         setContentView(R.layout.leetr_app_layout);
 
+//        final ActionBar ab = getSupportActionBar();
+
+
+        // set defaults for logo & home up
+//        ab.setDisplayHomeAsUpEnabled(false);
+//        ab.setDisplayUseLogoEnabled(false);
+
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.content, new CounterListFragment()).commit();
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.middleFragment, new CounterListFragment());
+            ft.commit();
         }
 //        setContentView(R.layout.counter_list);
 //
@@ -40,6 +53,8 @@ public class CounterListActivity extends LeetrActivity implements OnCounterSelec
 //        initUiComponents();
 //        populateList();
     }
+
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -98,6 +113,26 @@ public class CounterListActivity extends LeetrActivity implements OnCounterSelec
 //        });
     }
 
+    protected void showAddCounter() {
+        Intent intent = new Intent(this, CounterDetailsActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        menu.add("Add")
+                .setOnMenuItemClickListener(new android.support.v4.view.MenuItem.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(android.support.v4.view.MenuItem item) {
+                        showAddCounter();
+                        return true;
+                    }
+                })
+                .setIcon(R.drawable.header_add_button)
+                .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+        return super.onCreateOptionsMenu(menu);
+    }
+
     @Override
     public boolean onContextItemSelected(MenuItem item) {
 //        switch (item.getItemId()) {
@@ -141,6 +176,46 @@ public class CounterListActivity extends LeetrActivity implements OnCounterSelec
     @Override
     public void onCounterSelected(long id) {
         Intent intent = new Intent(this, CounterDetailsActivity.class);
+        intent.putExtra(Counter.EXTRA_ACTION, Counter.ACTION_VIEW);
+        intent.putExtra(Counter.EXTRA_ID, id);
         startActivity(intent);
+    }
+
+    /**
+     * Called when a tab that is already selected is chosen again by the
+     * user. Some applications may use this action to return to the top
+     * level of a category.
+     *
+     * @param tab The tab that was reselected.
+     * @param ft  Unused, always {@code null}. Begin your own transaction by
+     *            calling {@link android.support.v4.app.FragmentActivity#getSupportFragmentManager()}.
+     */
+    @Override
+    public void onTabReselected(ActionBar.Tab tab, FragmentTransaction ft) {
+        //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
+     * Called when a tab enters the selected state.
+     *
+     * @param tab The tab that was selected
+     * @param ft  Unused, always {@code null}. Begin your own transaction by
+     *            calling {@link android.support.v4.app.FragmentActivity#getSupportFragmentManager()}.
+     */
+    @Override
+    public void onTabSelected(ActionBar.Tab tab, FragmentTransaction ft) {
+        //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    /**
+     * Called when a tab exits the selected state.
+     *
+     * @param tab The tab that was unselected
+     * @param ft  Unused, always {@code null}. Begin your own transaction by
+     *            calling {@link android.support.v4.app.FragmentActivity#getSupportFragmentManager()}.
+     */
+    @Override
+    public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction ft) {
+        //To change body of implemented methods use File | Settings | File Templates.
     }
 }

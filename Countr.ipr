@@ -34,8 +34,23 @@
     <autodetection-disabled>
       <facet-type id="android">
         <modules>
+          <module name="android-leetr-library">
+            <files>
+              <file url="file://$PROJECT_DIR$/../leetr-android/leetr-android-library/AndroidManifest.xml" />
+            </files>
+          </module>
           <module name="Countr" />
           <module name="Countr" />
+          <module name="leetr-android-test">
+            <files>
+              <file url="file://$PROJECT_DIR$/../leetr-android/leetr-android-test/AndroidManifest.xml" />
+            </files>
+          </module>
+          <module name="leetr-android-tests">
+            <files>
+              <file url="file://$PROJECT_DIR$/../leetr-android/leetr-android-tests/AndroidManifest.xml" />
+            </files>
+          </module>
           <module name="LeetrBase">
             <files>
               <file url="file://$PROJECT_DIR$/../leetr-android/AndroidManifest.xml" />
@@ -216,9 +231,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../leetr-android/external//ActionBarSherlock.iml" filepath="$PROJECT_DIR$/../leetr-android/external//ActionBarSherlock.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../leetr-android/external//ActionBarSherlock.iml" filepath="$PROJECT_DIR$/../leetr-android/external//ActionBarSherlock.iml" />
       <module fileurl="file://$PROJECT_DIR$/Countr.iml" filepath="$PROJECT_DIR$/Countr.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../leetr-android/leetr-android-library/android-leetr-library.iml" filepath="$PROJECT_DIR$/../leetr-android/leetr-android-library/android-leetr-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../leetr-android/library/android-leetr-library.iml" filepath="$PROJECT_DIR$/../leetr-android/library/android-leetr-library.iml" />
     </modules>
   </component>
   <component name="ProjectResources">
@@ -230,29 +244,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../leetr-android" vcs="Git" />
-  </component>
-  <component name="libraryTable">
-    <library name="jackson-core-asl-1.8.0">
-      <CLASSES>
-        <root url="jar://$PROJECT_DIR$/../leetr-android/leetr-android-library/libs/jackson-core-asl-1.8.0.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES />
-    </library>
-    <library name="jackson-mapper-asl-1.8.0">
-      <CLASSES>
-        <root url="jar://$PROJECT_DIR$/../leetr-android/leetr-android-library/libs/jackson-mapper-asl-1.8.0.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES />
-    </library>
-    <library name="libGoogleAnalytics">
-      <CLASSES>
-        <root url="jar://$PROJECT_DIR$/../leetr-android/leetr-android-library/libs/libGoogleAnalytics.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES />
-    </library>
   </component>
 </project>
 

@@ -1,11 +1,20 @@
 package com.leetr.countr.model;
 
+import android.content.ContentResolver;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
+import android.net.Uri;
+import com.leetr.countr.provider.CounterProvider;
 
 public class Counter {
+    public static final String EXTRA_ACTION = "com.leetr.countr.model.Counter.EXTRA_ACTION";
+    public static final String EXTRA_ID = "com.leetr.countr.model.Counter.EXTRA_ID";
+    public static final int ACTION_VIEW = 1;
+    public static final int ACTION_EDIT = 2;
+    public static final int ACTION_DELETE = 3;
+
 //    public static final String TABLE_NAME = "counter";
 //
 //    public static final String KEY_ID     = "_id";
@@ -66,7 +75,19 @@ public class Counter {
     }
 
     public static Counter counterFromCursorRow(Cursor cursor) {
-        return new Counter(cursor.getLong(0), cursor.getString(1));
+        cursor.moveToFirst();
+        Counter counter = new Counter(cursor.getLong(0), cursor.getString(1));
+        cursor.close();
+        return counter;
+    }
+
+    public static Counter withId(Context context, long id) {
+        Uri uri = Uri.withAppendedPath(CounterProvider.CounterMetaData.CONTENT_URI, String.valueOf(id));
+
+        ContentResolver cr = context.getContentResolver();
+        Cursor c = cr.query(uri, null, null, null, null);
+
+        return counterFromCursorRow(c);
     }
 
     private long mId;

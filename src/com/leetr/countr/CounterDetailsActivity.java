@@ -1,25 +1,61 @@
 package com.leetr.countr;
 
 import android.os.Bundle;
-import android.widget.ListView;
-import android.widget.ViewFlipper;
+import android.support.v4.app.ActionBar;
+import android.support.v4.view.ViewPager;
 import com.leetr.activity.LeetrActivity;
+import com.leetr.adapter.TabsAdapter;
+import com.leetr.countr.fragment.CounterDetailsFragment;
+import com.leetr.countr.fragment.CounterHistoryFragment;
+import com.leetr.countr.fragment.CounterStatsFragment;
+import com.leetr.countr.listener.OnCounterItemSelectedListener;
+import com.leetr.countr.listener.OnCounterRequestedListener;
+import com.leetr.countr.model.Counter;
 
-public class CounterDetailsActivity extends LeetrActivity {
+public class CounterDetailsActivity extends LeetrActivity
+        implements OnCounterItemSelectedListener, OnCounterRequestedListener {
+
 
     private static final int CONTEXTMENU_DELETE = 1;
 
-    private long mCounterId;
-    private ListView mItemsListView;
-    private ViewFlipper mContentFlipper;
-    private DbHelper mDbHelper;
+//    private long mCounterId;
+//    private ListView mItemsListView;
+//    private ViewFlipper mContentFlipper;
+//    private DbHelper mDbHelper;
+
+    private ViewPager mViewPager;
+    private TabsAdapter mTabsAdapter;
+    private Counter mCounter;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.counter_details);
+        setContentView(R.layout.activity_counter_details);
 
+        Bundle args = null;
+
+        if (getIntent() != null) {
+            args = getIntent().getExtras();
+
+            if (args.containsKey(Counter.EXTRA_ID)) {
+                mCounter = Counter.withId(this, args.getLong(Counter.EXTRA_ID));
+            }
+
+        }
+
+        final ActionBar ab = getSupportActionBar();
+        ab.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+
+        mViewPager = (ViewPager) findViewById(R.id.pager);
+        mTabsAdapter = new TabsAdapter(this, getSupportActionBar(), mViewPager);
+        mTabsAdapter.addTab(ab.newTab().setText("Details"), CounterDetailsFragment.class, args);
+        mTabsAdapter.addTab(ab.newTab().setText("History"), CounterHistoryFragment.class, args);
+        mTabsAdapter.addTab(ab.newTab().setText("Stats"), CounterStatsFragment.class, args);
+
+        if (savedInstanceState != null) {
+            getSupportActionBar().setSelectedNavigationItem(savedInstanceState.getInt("index"));
+        }
 //        Intent launchIntent = getIntent();
 //        if (launchIntent.hasExtra(Counter.KEY_ID)) {
 //            mCounterId = launchIntent.getExtras().getLong(Counter.KEY_ID);
@@ -30,6 +66,17 @@ public class CounterDetailsActivity extends LeetrActivity {
 //        mDbHelper = DbHelper.open(getApplicationContext());
 //        populateList();
     }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("index", getSupportActionBar().getSelectedNavigationIndex());
+    }
+
+//    protected void initTabs(ActionBar bar) {
+//        bar.addTab(bar.newTab().setText("Details").setTabListener(this));
+//        bar.addTab(bar.newTab().setText("History").setTabListener(this));
+//    }
 
     @Override
     protected void onDestroy() {
@@ -103,5 +150,16 @@ public class CounterDetailsActivity extends LeetrActivity {
 //                R.layout.listitem_counteritem, c, source, dest);
 //
 //        mItemsListView.setAdapter(cursorAdapter);
+    }
+
+
+    @Override
+    public void onCounterItemSelected(long id) {
+
+    }
+
+    @Override
+    public Counter onCounterRequested(long id) {
+        return mCounter;
     }
 }
